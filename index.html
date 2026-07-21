@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portafolio académico de MLOps: proyectos, laboratorios, casos de estudio y talleres.">
+  <title>Portafolio MLOps | Inicio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <script src="assets/js/main.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <nav class="nav container" aria-label="Navegación principal">
+      <a class="brand" href="index.html" aria-label="Ir al inicio"><span class="brand-mark">ML</span><span>Portafolio MLOps</span></a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-links" aria-label="Abrir menú"><span></span><span></span><span></span></button>
+      <div class="nav-links" id="nav-links">
+        <a class="active" href="index.html">Inicio</a><a href="proyectos.html">Proyectos</a><a href="laboratorios.html">Laboratorios</a><a href="casos-estudio.html">Casos de estudio</a><a href="talleres.html">Talleres</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero container">
+      <div class="hero-copy reveal">
+        <p class="eyebrow"><span></span> Ingeniería · Datos · Automatización</p>
+        <h1>De modelos experimentales a <em>sistemas confiables.</em></h1>
+        <p class="hero-text">Este portafolio reúne mi trabajo práctico en MLOps: diseño de pipelines, despliegue de modelos, monitoreo y automatización del ciclo de vida de machine learning.</p>
+        <div class="hero-actions"><a class="button primary" href="proyectos.html">Explorar proyectos <span>→</span></a><a class="button secondary" href="#recorrido">Ver recorrido</a></div>
+      </div>
+      <div class="terminal-card reveal" aria-label="Ejemplo de pipeline MLOps">
+        <div class="terminal-bar"><i></i><i></i><i></i><span>pipeline.yml</span></div>
+        <pre><code><b>name:</b> ml-delivery
+
+<b>on:</b> [push]
+
+<b>jobs:</b>
+  <span>validate:</span>
+    - test_data
+    - test_model
+  <span>deliver:</span>
+    - build_image
+    - deploy
+
+<strong>✓ pipeline completed</strong></code></pre>
+      </div>
+    </section>
+
+    <section class="stats container reveal" aria-label="Resumen del portafolio">
+      <div><strong>04</strong><span>Áreas de trabajo</span></div><div><strong>CI/CD</strong><span>Entrega continua</span></div><div><strong>ML</strong><span>Ciclo reproducible</span></div><div><strong>∞</strong><span>Mejora continua</span></div>
+    </section>
+
+    <section class="section container" id="recorrido">
+      <div class="section-heading reveal"><div><p class="eyebrow"><span></span> Explora el portafolio</p><h2>Aprender construyendo</h2></div><p>Cada sección documenta un aspecto diferente del proceso, desde la experimentación hasta la puesta en producción.</p></div>
+      <div class="feature-grid">
+        <a class="feature-card reveal" href="proyectos.html"><span class="card-index">01</span><div class="card-icon">⌘</div><h3>Proyectos</h3><p>Soluciones integrales que conectan datos, modelos, infraestructura y entrega continua.</p><span class="card-link">Ver proyectos →</span></a>
+        <a class="feature-card reveal" href="laboratorios.html"><span class="card-index">02</span><div class="card-icon">⚗</div><h3>Laboratorios</h3><p>Experimentos técnicos enfocados en herramientas y prácticas específicas de MLOps.</p><span class="card-link">Ver laboratorios →</span></a>
+        <a class="feature-card reveal" href="casos-estudio.html"><span class="card-index">03</span><div class="card-icon">◫</div><h3>Casos de estudio</h3><p>Análisis de problemas reales, decisiones de arquitectura y resultados obtenidos.</p><span class="card-link">Ver casos →</span></a>
+        <a class="feature-card reveal" href="talleres.html"><span class="card-index">04</span><div class="card-icon">△</div><h3>Talleres</h3><p>Guías prácticas y recursos para aplicar los conceptos paso a paso.</p><span class="card-link">Ver talleres →</span></a>
+      </div>
+    </section>
+  </main>
+  <footer><div class="container"><p>Portafolio MLOps · <span data-year></span></p><p>Construido con HTML, CSS, JavaScript y GitHub Pages.</p></div></footer>
+</body>
+</html>
